@@ -1,6 +1,5 @@
 build/
 bin/
-.cache/
 
 *.o
 *.a
@@ -9,6 +8,8 @@ bin/
 
 
 test*
+CMakePresets.json
+compile_commands.json
 .vscode/
 .idea/
 *.user
