@@ -19,3 +19,5 @@ test*
 *~
 *.swp
 *.loh
+.clang-tidy
+*.idx
