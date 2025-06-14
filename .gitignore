@@ -1,6 +1,6 @@
 build/
 bin/
-
+.cache/
 
 *.o
 *.a
