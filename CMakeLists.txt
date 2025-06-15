@@ -9,11 +9,10 @@ set(BIN_DIR ${CMAKE_SOURCE_DIR}/bin)
 set(
     SOURCES
     src/main.cpp
-    # src/hello.cpp
+    src/hello.cpp
 )
 
 add_executable(
     test
     ${SOURCES}
 )
-target_include_directories(test PRIVATE include/)
