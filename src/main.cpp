@@ -1,5 +1,5 @@
 #include "include/hello.h"
-#include <cstdio>
+#include <cmath>
 #include <iostream>
 #include <string>
 #include <string_view>
@@ -11,8 +11,7 @@ template <typename T1>
 void print(T1 val);
 
 int main() {
-    setlocale(LC_ALL, "RU");
-    hello();
+    
     return 0;
 }
 
