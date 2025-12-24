@@ -12,7 +12,17 @@ set(
     src/hello.cpp
 )
 
+include_directories(src/include)
+
 add_executable(
     test
     ${SOURCES}
 )
+if (CMAKE_EXPORT_COMPILE_COMMANDS)
+  add_custom_target(update_compile_commands ALL
+    COMMAND ${CMAKE_COMMAND} -E create_symlink
+            ${CMAKE_BINARY_DIR}/compile_commands.json
+            ${CMAKE_SOURCE_DIR}/build/compile_commands.json
+    COMMENT "Updating active compile_commands.json for clangd"
+  )
+endif()
