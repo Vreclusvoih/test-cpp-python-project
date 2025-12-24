@@ -1,29 +1,27 @@
+#include "include/hello.h"
+#include <bitset>
+#include <cmath>
 #include <iostream>
+#include <string>
+#include <string_view>
+#include <utility>
 
-class Foo
-{
-private:
-    int m_x{};
-    int m_y{};
-public:
-    Foo(int x)
-        : m_x{ x }
-    {
-    }
+using namespace std::string_literals;
+using namespace std::string_view_literals;
 
-    int getX() const { return m_x; }
-};
+template <typename T1>
+void print(const T1 &val);
 
-void printFoo(Foo f) // has a Foo parameter
-{
-    std::cout << f.getX();
+
+
+int main(int argc, char *argv[]) {
+
+    
+
+    return 0;   
 }
 
-int main()
-{
-    Foo OLEG{12};
-
-    printFoo(OLEG); // we're supplying an int argument
-
-    return 0;
+template <typename T1>
+void print(const T1 &val) {
+    std::cout << val << '\n';
 }
